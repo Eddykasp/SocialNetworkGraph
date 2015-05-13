@@ -5,10 +5,13 @@
 
 int main()
 {
-    int matrix[MATRIX_SIZE][MATRIX_SIZE];
+    int matrix[MATRIX_SIZE][MATRIX_SIZE], q=0;
     init_matrix(matrix);
 
-    menu();
+    while(!q)
+    {
+        q=menu(matrix);
+    }
 
     return 0;
 }

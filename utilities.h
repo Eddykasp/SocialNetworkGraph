@@ -3,6 +3,6 @@
 
 #define MATRIX_SIZE 5
 
-void menu();
+int menu(int * matrix[MATRIX_SIZE][MATRIX_SIZE]);
 
 #endif // MAIN_H_INCLUDED

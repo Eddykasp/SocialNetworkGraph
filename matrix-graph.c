@@ -14,6 +14,8 @@ void init_matrix(int * matrix[MATRIX_SIZE][MATRIX_SIZE])
 
 void view_matrix(int * matrix[MATRIX_SIZE][MATRIX_SIZE])
 {
+    system("cls");
+    printf("\n");
     int i,j;
     for(i=0;i<MATRIX_SIZE;i++)
     {
@@ -23,4 +25,5 @@ void view_matrix(int * matrix[MATRIX_SIZE][MATRIX_SIZE])
         }
         printf("\n");
     }
+    getch();
 }
