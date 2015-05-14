@@ -1,6 +1,6 @@
 #include "utilities.h"
 
-int menu(int * matrix[MATRIX_SIZE][MATRIX_SIZE])
+int menu(int * matrix[MATRIX_SIZE][MATRIX_SIZE], STRING * name_list[MATRIX_SIZE])
 {
     system("cls");
     printf("MAIN MENU\n\nPlease make a selection.\n");
@@ -26,6 +26,8 @@ int menu(int * matrix[MATRIX_SIZE][MATRIX_SIZE])
         }
     case 2:
         {
+            view_mapping(name_list);
+            getch();
             break;
         }
     case 3:

@@ -6,12 +6,14 @@
 int main()
 {
     int matrix[MATRIX_SIZE][MATRIX_SIZE], q=0;
-    char name_list[NAME_LENGTH][MATRIX_SIZE];
+    STRING name_list[MATRIX_SIZE];
+
     init_matrix(matrix);
+    init_identifier_mapping(name_list);
 
     while(!q)
     {
-        q=menu(matrix);
+        q=menu(matrix, name_list);
     }
 
     return 0;
