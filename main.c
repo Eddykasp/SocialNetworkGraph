@@ -6,6 +6,7 @@
 int main()
 {
     int matrix[MATRIX_SIZE][MATRIX_SIZE], q=0;
+    char name_list[NAME_LENGTH][MATRIX_SIZE];
     init_matrix(matrix);
 
     while(!q)
