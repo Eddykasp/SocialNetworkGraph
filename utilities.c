@@ -6,8 +6,9 @@ int menu(int * matrix[MATRIX_SIZE][MATRIX_SIZE], STRING * name_list[MATRIX_SIZE]
     printf("MAIN MENU\n\nPlease make a selection.\n");
     printf("0: Quit\n");
     printf("1: Modify relations\n");
-    printf("2: Map identifiers\n");
+    printf("2: View mapping\n");
     printf("3: View Adjacency Matrix\n");
+    printf("4: New mapping\n");
 
     char c;
     int q=0;
@@ -35,6 +36,11 @@ int menu(int * matrix[MATRIX_SIZE][MATRIX_SIZE], STRING * name_list[MATRIX_SIZE]
             view_matrix(matrix);
             break;
         }
+    case 4:
+        {
+            create_mapping(name_list);
+            break;
+        }
     default:
         {
             printf("n/a");
@@ -42,4 +48,10 @@ int menu(int * matrix[MATRIX_SIZE][MATRIX_SIZE], STRING * name_list[MATRIX_SIZE]
         }
     }
     return q;
+}
+
+void get_input(char * prompt[], char * target[])
+{
+    printf("\n%s\n",prompt);
+    scanf("%s",target);
 }

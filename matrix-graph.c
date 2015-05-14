@@ -53,3 +53,12 @@ void view_mapping(STRING * name_list[MATRIX_SIZE])
         printf("\n");
     }
 }
+
+void create_mapping(STRING * name_list[MATRIX_SIZE])
+{
+    int i;
+    for(i=0;i<MATRIX_SIZE;i++)
+    {
+        get_input("Please enter a name: ", name_list+i);
+    }
+}
